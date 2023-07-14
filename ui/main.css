@@ -1,0 +1,92 @@
+body {
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Helvetica", sans-serif;
+}
+
+*::selection {
+    background: transparent;
+}
+
+#pet-container {
+    position: relative;
+    width: 540px;
+    min-height: 200px;
+    background: rgb(230,129,0);
+    background: linear-gradient(180deg, rgba(230,129,0,1) 0%, rgba(228,147,54,1) 35%, rgba(255,202,136,1) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    flex-direction: column;
+    gap: 40px;
+    box-shadow: 5px 5px 5px 5px white;
+    padding: 50px;
+}
+
+#pet-container > #list-pet {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+#pet-container > #top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+}
+
+#pet-container > #top > .title {
+    font-weight: 700;
+    font-size: 2rem;
+    color: white;
+    text-align: center;
+}
+
+#pet-container > #top > img {
+    width: 50px;
+    height: auto;
+}
+
+#pet-container > #top > #discord, #exit {
+    cursor: pointer;
+    transition: transform 0.1s ease-in-out;
+}
+
+#pet-container > #top > #discord:hover {
+    transform: scale(0.95);
+    filter: brightness(0) saturate(100%) invert(58%) sepia(24%) saturate(6569%) hue-rotate(209deg) brightness(94%) contrast(86%);
+}
+
+#pet-container > #top > #exit:hover {
+    transform: scale(0.95);
+    filter: brightness(0) saturate(100%) invert(21%) sepia(73%) saturate(2346%) hue-rotate(344deg) brightness(118%) contrast(85%);
+}
+
+#pet-container > #top > #gif {
+    width: 180px;
+    height: auto;
+}
+
+button {
+    background: #E68100FF;
+    border: none;
+    color: white;
+    width: 120px;
+    height: 70px;
+    border-radius: 15px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    cursor: pointer;
+    box-shadow: 5px 5px 5px 5px white;
+    transition: transform 0.1s ease-in-out;
+}
+
+button:hover {
+    transition: 1s;
+    transform: scale(0.95);
+    background: #ffa74b;
+}
