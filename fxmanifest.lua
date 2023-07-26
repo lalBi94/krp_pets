@@ -1,6 +1,5 @@
 fx_version 'adamant'
 game 'gta5'
-lua54 'yes'
 
 author "General Zod | Discord: bilaaaaaaaaaal"
 description "Pet script for Metropolis"

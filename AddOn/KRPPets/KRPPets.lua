@@ -80,7 +80,15 @@ function ZODWorks.KRPPets:spawnPet(race, name)
             model = "a_c_crow",
             hash = GetHashKey("a_c_crow"),
             type = 0
-        }
+        }, ["boar"] = {
+            model = "a_c_crow",
+            hash = GetHashKey("a_c_boar"),
+            type = 0
+	}, ["coyot"] = {
+            model = "a_c_coyote",
+            hash = GetHashKey("a_c_coyote"),
+            type = 0
+	}
     }
 
     if(not ZODWorks.Utils:tableContainsKey(pets, race)) then
